@@ -31,8 +31,17 @@ nav {
 }
 
 .frosted {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 24px;
+  padding: 30px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  margin: 40px 0;
 }
 
 .container {
@@ -68,4 +77,20 @@ nav {
 
 .input-search::placeholder {
   color: #fff;
+}
+
+.heading {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+.btn-upgrade {
+  background: #685bc4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 8px;
 }
