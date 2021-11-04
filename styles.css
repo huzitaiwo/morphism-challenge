@@ -36,6 +36,7 @@ nav {
   padding: 30px;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .two-column-grid {
@@ -79,7 +80,11 @@ nav {
   color: #fff;
 }
 
-.hero-section p {
+.section {
+  margin: 20px 0;
+}
+
+.section p {
   padding: 10px 0 30px;
 }
 
@@ -89,11 +94,7 @@ nav {
   max-width: 250px;
 }
 
-.section {
-  margin: 30px 0;
-}
-
-.btn-upgrade {
+.btn {
   background: #685bc4;
   color: #fff;
   display: flex;
@@ -102,4 +103,18 @@ nav {
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.btn img {
+  margin-left: 5px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-lang {
+  background: rgba(255, 255, 255, 0.1);
 }
