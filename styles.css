@@ -80,6 +80,13 @@ nav {
   color: #fff;
 }
 
+.avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .section {
   margin: 20px 0;
 }
@@ -118,3 +125,33 @@ nav {
 .btn-lang {
   background: rgba(255, 255, 255, 0.1);
 }
+
+.courses {
+  margin: 20px 0;
+}
+
+/* table {
+  width: 100%;
+}
+
+th {
+} */
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr 1.3fr;
+}
+
+.stats h3 {
+  display: flex;
+  align-items: center;
+}
+
+.divded {
+  padding-bottom: 30px;
+}
+
+/* tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.2fr;
+} */
