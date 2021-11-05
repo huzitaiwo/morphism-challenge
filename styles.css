@@ -12,6 +12,12 @@ body {
   color: #fff;
 }
 
+button:focus,
+a:focus,
+.form-search:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.3);
+}
+
 main {
   display: flex;
   min-height: 100vh;
@@ -122,11 +128,15 @@ nav {
   justify-content: space-between;
 }
 
+.secondary-heading {
+  font-size: 1.2rem;
+}
+
 .btn-lang {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.courses {
+.courses-preview {
   margin: 20px 0;
   padding: 30px 0;
 }
@@ -139,14 +149,38 @@ nav {
   padding: 15px 30px;
   align-items: center;
 }
+
 .head-stats {
   padding: 0 30px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.stats h3 {
+.stats,
+.head-stats button {
+  width: 100%;
+  border-radius: 18px;
+  border: none;
+  background: none;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.stats:hover {
+  background: #2e2b34;
+}
+
+.stats li {
+  padding: 0 10px;
+}
+
+.head-stats button {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 8px;
 }
 
 .divded {
@@ -157,8 +191,3 @@ nav {
   display: flex;
   align-items: center;
 }
-
-/* tr {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.2fr;
-} */
