@@ -39,14 +39,31 @@ main {
 
 nav {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  padding: 10px 40px;
+  padding: 17px 40px;
 }
 
 .tabs {
-  list-style: none;
+  transform: translateY(100%);
+}
+
+.tabs > * {
+  margin-bottom: 30px;
+}
+
+.icon {
+  padding: 4px 7px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon.active {
+  padding: 4px 7px 2px;
+  background: #685bc4;
 }
 
 .frosted {
@@ -99,6 +116,14 @@ nav {
 
 .search-icon {
   padding: 0 10px;
+}
+
+.user {
+  display: flex;
+}
+
+.align {
+  margin-top: 4px;
 }
 
 .avatar {
@@ -288,9 +313,8 @@ textarea.input {
   /* padding: 5px 0; */
 }
 
-.chat-form button {
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+button.send {
   background: #685bc4;
+  border: none;
+  border-radius: 50%;
 }
