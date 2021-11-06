@@ -378,14 +378,54 @@ button.send {
   nav {
     flex-direction: column;
   }
+  main {
+    padding: 0px 10px;
+  }
 
   div.md {
     display: flex;
     order: 1;
   }
 
+  .nav-actions {
+    order: 2;
+  }
+
   .nav-actions,
   .masthead {
     width: 100%;
+  }
+
+  .frosted,
+  button.stats {
+    padding: 15px;
+  }
+
+  .sm,
+  button.sm {
+    display: none;
+  }
+
+  .stats,
+  .head-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .stats li {
+    padding: 0;
+  }
+
+  .live-chat {
+    height: 500px;
+  }
+
+  .chat {
+    padding: 15px 15px 0;
+    display: flex;
+  }
+
+  .chat-action {
+    padding: 15px 5px;
   }
 }
