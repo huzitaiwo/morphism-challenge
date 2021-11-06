@@ -7,6 +7,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #cac8d3;
+}
+::-webkit-scrollbar-thumb {
+  background: #685bc4;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #685bc4;
+}
+
 body {
   background: #2b2936;
   color: #fff;
@@ -14,7 +27,7 @@ body {
 
 button:focus,
 a:focus,
-.form-search:focus {
+.form:focus {
   outline: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -63,7 +76,7 @@ nav {
   align-items: center;
 }
 
-.form-search {
+.form {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -72,7 +85,7 @@ nav {
   max-width: 400px;
 }
 
-.input-search {
+.input {
   background: none;
   outline: none;
   border: none;
@@ -80,12 +93,12 @@ nav {
   color: #fff;
 }
 
-.search-icon {
-  padding: 0 10px;
+.input::placeholder {
+  color: #fff;
 }
 
-.input-search::placeholder {
-  color: #fff;
+.search-icon {
+  padding: 0 10px;
 }
 
 .avatar {
@@ -101,6 +114,7 @@ nav {
 
 .section p {
   padding: 10px 0 30px;
+  max-width: 300px;
 }
 
 .heading {
@@ -207,6 +221,8 @@ progress[value]::-webkit-progress-bar {
 
 .live-chat {
   padding: 30px 0;
+  height: 710px;
+  /* overflow-y: scroll; */
 }
 
 .live-chat .head {
@@ -221,7 +237,7 @@ small {
 }
 
 .chat {
-  padding: 30px;
+  padding: 30px 30px 0;
   display: flex;
 }
 
@@ -233,4 +249,48 @@ small {
 
 .bubble h5 {
   padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.bubble p {
+  font-weight: 300;
+}
+
+.me {
+  justify-content: flex-end;
+}
+
+.chat-action {
+  padding: 30px;
+}
+
+.chat-form {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 5px 0;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-form > * {
+  margin: 0 10px;
+}
+
+textarea.input {
+  resize: none;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  /* padding: 5px 0; */
+}
+
+.chat-form button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #685bc4;
 }
